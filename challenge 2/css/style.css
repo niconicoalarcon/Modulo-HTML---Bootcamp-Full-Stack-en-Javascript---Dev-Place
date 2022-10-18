@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+.saludo{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    padding: 10%;
+}
+span{
+    font-size: 40px;
+    color: white;    
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17ch;
+    animation: typing 3s steps(17),
+    blink .5s infinite step-end alternate;
+    overflow:hidden; 
+}
+
+@keyframes typing{
+    from{ width: 0}
+}
+@keyframes blink{
+    50%{ border-color: transparent}
+}
+/*navegacion*/
+.container-nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 20px 20px 30px 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 0%, rgba(28,4,4,1) 100%);
+
+}
+img{
+    width: 30px;
+    height: 30px;
+    float:left;
+    
+    
+}
+.logo{
+    display:absolute;
+    margin-top: 0px;
+    border: 20px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+nav{
+    float:right;
+}
+
+nav li{
+    display: inline;
+    padding:10px;
+    margin: 5px;
+}
+
+
+nav a{
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #850404;
+    
+}
+main{
+    background:url("../img/pexels-sevenstorm-juhaszimrus-425047.jpg");
+    width: 100%;
+    padding: 10%;
+    color:white;
+
+}
+/*footer*/
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 10%;
+    color:white;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
